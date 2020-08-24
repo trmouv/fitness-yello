@@ -360,7 +360,6 @@ template {
 
 header {
     padding: 10px 20px 10px 20px;
-    background-color: green;
     height: 70px;
 }
 
@@ -381,7 +380,7 @@ header nav ul{
 }
 
 header nav li{
-    color: blue;
+    color: #5399D3;
     float: left;
     margin-right: 20px;
 }
@@ -391,7 +390,7 @@ header nav li:hover{
 }
 
 .cta_header #cta_btn{
-    background-color: orange;
+    background-color: #FBAC17;
     color: #ffffff;
     border-radius: 20px;
     text-align: center;
@@ -404,7 +403,7 @@ header nav li:hover{
 
 .cta_header #phone_number{
     margin-top: 10px;
-    color: blue;
+    color: #5399D3;
     text-align: center;
 }
 
@@ -430,15 +429,15 @@ section{
 }
 
 .banner_box h1 {
-    color: blue;
+    color: #5399D3;
 }
 
 .banner_box h2 {
-    color: orange;
+    color: #FBAC17;
 }
 
 .banner_box p{
-    color: blue;
+    color: #5399D3;
     margin-bottom: 30px;
 }
 
@@ -447,27 +446,40 @@ section{
 }
 
 .btn_blue{
-    background-color: blue;
+    background-color: #5399D3;
     color: #ffffff;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
 }
 
 .btn_orange{
-    background-color: orange;
+    background-color: #FBAC17;
     color: #ffffff;
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
 }
 
-.activities{
-    background-color: orange;
-    width: 100%;
-    height: 50vh;
-    padding: 10px 20px 10px 10px;
+section.activities{
+    background-color: #FBAC17;
+    padding: 10px 20px 20px 10px;
+}
+
+.flex_3{
+    display: flex;
+    justify-content: space-around;
+}
+
+section.activities article{
+    flex-direction: column;
+    width: 500px;
+    background-color: white;
+    margin: 0 20px 20px 0px;
+    text-align: center;
 }
 
 .activities h2{
+    flex-direction: row;
+    flex-wrap: wrap;
     color: white;
 }
 
@@ -476,20 +488,86 @@ section{
 }
 
 .activities p{
-    color: blue;
+    color: #5399D3;
 }
 
-.parent_activity{
-    display: flex;
-    width: 100%;
-
+.img_activite{
+    box-sizing: border-box;
 }
 
-.child_activity{
-    flex-flow: row nowrap;
-    background-color: white;
-    margin: 0 20px 20px 0px;
-    padding: 0 10px 0 10px;
+.box_contain{
+    padding: 10px;
+}
+
+section.coaches{
+    margin-top: 0px;
+    padding: 0 3em 0 3em;
+}
+
+section.coaches h2{
+    color: #5399D3;
     text-align: center;
+}
+
+section.coaches .grid_coaches{
+    display : grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+
+section.coaches div article{
+    height: 200px;
     border-radius: 10px;
+    background-color: #5399D3;
+}
+
+section.coaches div article div{
+    color: #ffffff;
+    width: 400px;
+    position: absolute;
+    top: 1em;
+    right: 5em;
+    text-align: center;
+}
+
+section.coaches div article div h4{
+    border-bottom: solid 2px #ffffff;
+    padding-bottom: 2em;
+}
+
+#jerome_mazuret{
+    background-image: url("images/jerome_mazuret.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#julia_modiano{
+    background-image: url("images/julia_modiano.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#remy_tobin{
+    background-image: url("images/remy_tobin.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -2em;
+    position: relative;
+}
+
+#eglantine_laroche{
+    background-image: url("images/eglantine_laroche.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -7em;
+    position: relative;
+}
+
+.social_ico_coaches{
+    list-style-type: none;
+    text-align: center;
+    width: 300px;
+}
+
+.social_ico_coaches li{
+    float: left;
 }
