@@ -5,7 +5,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header><img src="images/logo_fitnessyello.png" alt="fitnessyello_logo"/>
+        <header>
+            <div class="logo">
+                <img src="images/logo_fitnessyello.png" height="70px" alt="fitnessyello_logo"/>
+            </div>
             <nav>
                 <ul>
                     <li>Activités</li>
@@ -15,34 +18,39 @@
                     <li>Actualité</li>
                 </ul>
             </nav>
-            <div>
-                <div id="cta_btn"></div>
-                <div id="phone_number">06.12.34.56.78</div>
+            <div class="cta_header">
+                <div id="cta_btn">Testez une séance gratuite</div>
+                <div id="phone_number">📞 06.12.34.56.78</div>
             </div>
         </header>
-        <section id="home_banner">
-            <h1>Un esprit sain dans un corps sain</h1>
-            <h2>Maintenez votre forme toute l'année chez Fitness Yello !</h2>
-            <p>Auctor sem massa mattis sem at interdum magna augue eget diam
-                vestibulum ante ipsum primis in faucibus orci luctus.</p>
-            <a href="#" class="btn_orange">Je teste une séance gratuite</a>
-            <a href="#" class="btn_blue">Voir nos activités</a>
+        <div class="clear"></div>   
+        <section class="home_banner">
+            <div class="banner_box">
+                <h1>Un esprit sain dans un corps sain</h1>
+                <h2>Maintenez votre forme toute l'année chez Fitness Yello !</h2>
+                <p>Auctor sem massa mattis sem at interdum magna augue eget diam
+                    vestibulum ante ipsum primis in faucibus orci luctus.</p>
+                <a href="#" class="btn_orange">Je teste une séance gratuite</a>
+                <a href="#" class="btn_blue">Voir nos activités</a>
+            </div>
         </section>
 
-        <section id="activities">
-            <h2>Nos activités</h2>
-            <article><div><h3>Boxe</h3></div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            </article>
-            <article><div><h3>Fitness</h3></div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            </article>
-            <article><div><h3>Crossfit</h3></div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            </article>
+        <section class="activities">
+            <h2 style="text-align: center;">Nos activités</h2>
+            <div class="parent_activity">
+                <div class="child_activity"><article><div><h3>Boxe</h3></div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </article></div>
+                <div class="child_activity"><article><div><h3>Fitness</h3></div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </article></div>
+                <div class="child_activity"><article><div><h3>Crossfit</h3></div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </article></div>
+            </div>
         </section>
 
-        <section id="coaches">
+        <section class="coaches">
             <h2>Nos coaches</h2>
             <article><div><h3>Jérôme <span style="text-transform: uppercase;">Mazuret</span></h3><h4>Musculation & Boxe Trainer</h4></div></article>
             <article><div><h3>Julia <span style="text-transform: uppercase;">Modiano</span></h3><h4>Crossfit & Fitness Trainer</h4></div></article>
@@ -50,7 +58,7 @@
             <article><div><h3>Églantine <span style="text-transform: uppercase;">Laroche</span></h3><h4>Fitness Trainer</h4></div></article>
         </section>
 
-        <section id="testimonials">
+        <section class="testimonials">
             <article>
                 <ul>
                     <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
@@ -71,12 +79,12 @@
             </article>
         </section>
 
-        <section id="calltoaction">
+        <section class="calltoaction">
             <h2>Surpassez vos limites dès maintenant !</h2>
             <h3>Passez à l'action en profitant de nos offres taillées selon vos besoins</h3>
         </section>
 
-        <section id="arguments">
+        <section class="arguments">
             <h2>Fitness Yello en chiffres</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam </p>
             <ul>
@@ -87,7 +95,7 @@
             </ul>
         </section>
 
-        <section id="offers">
+        <section class="offers">
             <h2>Nos offres</h2>
             <article>
                 <p>Satisfait ou remboursé</p>
@@ -112,7 +120,7 @@
             </article>
         </section>
 
-        <section id="contact">
+        <section class="contact">
             <h2>Contactez-nous !</h2>
             <div>
                 <form>
