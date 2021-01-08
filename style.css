@@ -731,7 +731,7 @@ section.testimonials{
 .scrolling_wrapper_testimonials{
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: hidden;
+    overflow-x: auto;
     touch-action: pan-x;
 }
 
