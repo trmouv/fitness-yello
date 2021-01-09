@@ -4,12 +4,13 @@
         <meta charset="utf-8" content="text/html">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
     <body>
         
 <!-- Menu Desktop -->
-
 <section>
+<div class="useful_margin">
     <header>
         <div class="flex_grid">
             <div class="grid_1_3" id="logo">
@@ -27,30 +28,34 @@
                 </nav>
             </div>
             <div class="grid_1_3">
-                <button>Testez une séance gratuite</button>
+                <button>Tester une séance gratuite</button>
                 <div class="phone_number"><i class="fas fa-phone-alt"></i> 06.12.34.56.78</div>
             </div>
         </div> 
     </header>
+</div>
 </section>
 
 <!-- Clear -->
 <div class="clear"></div>
 
 <!-- Section hero -->
-         
+<div class="useful_margin">      
 <section class="home_banner">
     <div class="banner_box">
         <h1>Un esprit sain dans un corps sain</h1>
-        <h2>Maintenez votre forme toute l'année<br/>chez Fitness Yello !</h2>
-        <button class="test">Je teste une séance gratuite</button>
+        <h2>Gardez la forme toute l'année<br/>chez Fitness Yello !</h2>
+        <button class="test">Tester une séance gratuite</button>
         <p style="margin-top:1em"><i>Offre à durée limitée !</i></p>
     </div>
-    <div class="circle"></div>
 </section>
-
+</div>
+<div class="useful_margin">
+    <div class="circle"></div>
+</div>
 <!-- Section activités -->
 <section class="activities">
+<div class="useful_margin"> 
     <h2 style="text-align: center;">Nos activités</h2>
     <div class="flex_3">
         <article>
@@ -72,10 +77,13 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
         </article>
     </div>
+</div>
 </section>
+
 
 <!-- Section coachs -->
 <section class="coaches">
+<div class="useful_margin"> 
     <h2>Nos coaches</h2>
     <div class="grid_coaches">
         <article>
@@ -111,137 +119,272 @@
         </article>
 
     </div>
+</div>
 </section>
+</div>
 
 <!-- Section avis clients-->
-        <section class="testimonials">
-            <h2>Avis Clients</h2>
-            <div class="scrolling_wrapper_testimonials">
-            <article>
-                <ul>
-                    <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
-                    <li><p><img class="round" src="images/anais_laurent.jpg" height="60px" alt="Anaïs Laurent"/>Anaïs <span style="text-transform:uppercase">Laurent</span></p></li>
-                </ul>
-            </article>
-            <article>
-                <ul>
-                    <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></li>
-                    <li><p><img class="round" src="images/graziella_ricci.jpg" height="60px" alt="Graziella Ricci"/>Graziella <span style="text-transform:uppercase">Ricci</span></p></li>
-                </ul>
-            </article>
-            <article>
-                <ul>
-                    <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
-                    <li><p><img class="round" src="images/sumalee_kular.jpg" height="60px" alt="Sumalee Kular"/>Sumalee <span style="text-transform:uppercase">Kular</span></p></li>
-                </ul>
-            </article>
-            <article>
-                <ul>
-                    <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
-                    <li><p><img class="round" src="images/sumalee_kular.jpg" height="60px" alt="Sumalee Kular"/>Sumalee <span style="text-transform:uppercase">Kular</span></p></li>
-                </ul>
-            </article>
-            </div>
-        </section>
+<section class="testimonials">
+<div class="useful_margin"> 
+    <h2>Avis Clients</h2>
+    <div class="scroll_btn">
+        <div id="scroll_left"><i class="fas fa-angle-left"></i></div>
+        <div id="scroll_right"><i class="fas fa-angle-right"></i></div>
+    </div>
+    <div class="scrolling_wrapper_testimonials">
+    <article>
+        <ul>
+            <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
+            <li><p><img class="round" src="images/anais_laurent.jpg" height="60px" alt="Anaïs Laurent"/>Anaïs <span style="text-transform:uppercase">Laurent</span></p></li>
+        </ul>
+    </article>
+    <article>
+        <ul>
+            <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></li>
+            <li><p><img class="round" src="images/graziella_ricci.jpg" height="60px" alt="Graziella Ricci"/>Graziella <span style="text-transform:uppercase">Ricci</span></p></li>
+        </ul>
+    </article>
+    <article>
+        <ul>
+            <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
+            <li><p><img class="round" src="images/sumalee_kular.jpg" height="60px" alt="Sumalee Kular"/>Sumalee <span style="text-transform:uppercase">Kular</span></p></li>
+        </ul>
+    </article>
+    <article>
+        <ul>
+            <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
+            <li><p><img class="round" src="images/sumalee_kular.jpg" height="60px" alt="Sumalee Kular"/>Sumalee <span style="text-transform:uppercase">Kular</span></p></li>
+        </ul>
+    </article>
+    <article>
+        <ul>
+            <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
+            <li><p><img class="round" src="images/sumalee_kular.jpg" height="60px" alt="Sumalee Kular"/>Sumalee <span style="text-transform:uppercase">Kular</span></p></li>
+        </ul>
+    </article>
+    <article>
+        <ul>
+            <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
+            <li><p><img class="round" src="images/sumalee_kular.jpg" height="60px" alt="Sumalee Kular"/>Sumalee <span style="text-transform:uppercase">Kular</span></p></li>
+        </ul>
+    </article>
+    <article>
+        <ul>
+            <li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p></li>
+            <li><p><img class="round" src="images/sumalee_kular.jpg" height="60px" alt="Sumalee Kular"/>Sumalee <span style="text-transform:uppercase">Kular</span></p></li>
+        </ul>
+    </article>
+    </div>
+</div>
+</section>
 
 <!-- Section CTA-->
-        <section class="calltoaction">
-        <div>
-            <h2>Surpassez vos limites dès maintenant !</h2>
-            <h3>Passez à l'action en profitant de nos offres taillées selon vos besoins</h3>
-        </div>
-        <div class="cta_btn_section">Inscrivez-vous maintenant !</div>
-        </section>
+<section class="calltoaction">
+<div class="useful_margin"> 
+    <div>
+        <h2>Surpassez vos limites dès maintenant !</h2>
+        <h3>Passez à l'action en profitant de nos offres <br/>taillées selon vos besoins</h3>
+        <button>Inscrivez-vous maintenant !</button>
+    </div>
+</div>
+</section>
 
-        <section class="arguments">
-            <h2>Fitness Yello en chiffres</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam </p>
-            <ul>
-                <li>600+<br>Membres</li>
-                <li>4<br>Coaches</li>
-                <li>226<br>Cours donnés</li>
-                <li>98%<br>De clients satisfaits</li>
-            </ul>
-        </section>
+<!-- Section arguments -->
+<section class="arguments">
+<div class="useful_margin"> 
+    <h2>Fitness Yello en chiffres</h2>
+    <p>Ces chiffres finiront par vous convaincre !</p>
+    <div class="numbers">
+        <div><span class="nbr_strg">600+</span><br>Membres</div>
+        <div><span class="nbr_strg">4</span><br>Coaches<br/>disponibles</div>
+        <div><span class="nbr_strg">226</span><br>Cours<br/>donnés</div>
+        <div class="satisfaction_circle"><p><span class="prcnt">98%</span><br>De clients<br/>satisfaits<br/><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></div>
+    </div>
+</div>
+</section>
 
 <!-- Section offres-->
-        <section class="offers">
-            <h2>Nos offres</h2>
-            <article>
-                <p>Satisfait ou remboursé</p>
-                <h3>Formule First</h3>
-                <h4>Une activité au choix</h4>
-                <h5><strong>29€</strong>/mois</h5>
-                <a href="#">S'abonner</a>
-            </article>
-            <article>
-                <p>Une semaine offerte !</p>
-                <h3>Formule Duo</h3>
-                <h4>Deux activités au choix</h4>
-                <h5><strong>49€</strong>/mois</h5>
-                <a href="#">S'abonner</a>
-            </article>
-            <article>
-                <p>Une seamine offerte et suivi personnalisé !</p>
-                <h3>Formule Premium</h3>
-                <h4>Toutes les activités sans limites</h4>
-                <h5><strong>69€</strong>/mois</h5>
-                <a href="#">S'abonner</a>
-            </article>
-        </section>
+<section class="offers">
+<div class="useful_margin"> 
+    <h2>Nos offres</h2>
+    <p>Choisissez la formule qui vous convient le mieux</p>
+    <div class="offers_box">
+        <article>
+            <p><i class="fas fa-check"></i> Satisfait ou remboursé</p>
+            <div class="img_offers" id="img_first"></div>
+            <div>
+                <h2>Formule First</h2>
+                <h3>Une activité au choix</h3>
+                <h2><strong>29€</strong>/mois</h2>
+            </div>
+            <button class="blue">S'abonner</button>
+        </article>
+        <article id="bonus_scale">
+            <p><i class="fas fa-check"></i> La joie du fitness à 2 !</p>
+            <p class="featured"><i class="fas fa-heart"></i>Votre coup de coeur !</p>
+            <div class="img_offers" id="img_together"></div>
+            <div>
+                <h2>Formule Together</h2>
+                <h3>En duo<br/>ou Deux activités au choix</h3>
+                <h2><strong>49€</strong>/mois</h2>
+            </div>
+            <button class="blue">S'abonner</button>
+        </article>
+        <article>
+            <p><i class="fas fa-check"></i> Une seamine offerte et suivi personnalisé !</p>
+            <div class="img_offers" id="img_premium"></div>
+            <div>
+                <h2>Formule Premium</h2>
+                <h3>Toutes les activités sans limites et en duo !</h3>
+                <h2><strong>69€</strong>/mois</h2>
+            </div>
+            <button class="blue">S'abonner</button>
+        </article>
+    </div>
+</div>
+</section>
 
 <!-- Section contact -->
-        <section class="contact">
-            <h2>Contactez-nous !</h2>
-            <div>
-                <form>
-                    <label for="name">Nom complet</label><br>
-                    <input type="text" name="name" placeholder="Entrez votre nom et prénom"><br>
-                    <label for="choix">Vous demandez</label><br>
-                    <input type="radio" id="essai" name="choix" value="essai" checked>
-                    <label for="essai">Essai gratuit</label>
-                    <input type="radio" id="question" name="choix" value="question">
-                    <label for="essai">Une question</label>
-                    <input type="radio" id="aide" name="choix" value="aide">
-                    <label for="aide">De l'aide</label><br>
-                    <label for="email">E-mail</label><br>
-                    <input type="text" name="email" placeholder="Entrez votre e-mail"><br>
-                    <label for="message">Message</label><br>
-                    <textarea id="message" name="message" rows="5" cols="33">Entrez votre message ici</textarea><br>
-                    <input type="submit" value="envoyer">
-                </form>
-            </div>
-            <div>
-                <h3>Où nous trouver ?</h3>
-                <ul>
-                    <li>52, rue de la Course<br>33 000 Bordeaux</li>
-                    <li>06.12.34.56.78</li>
-                </ul>
-            </div>
-        </section>
+<section class="contact">
+<div class="useful_margin"> 
+    <h2>Contactez-nous !</h2>
+    <div class="flex_2">
+        <div class="flex_050">
+            <h3>Prenez contact avec nous !</h3>
+            <form>
+                <label for="name" class="label_name">Nom complet</label><br>
+                <input type="text" name="name" class="champ" placeholder="Entrez votre nom et prénom"><br>
+                <label for="choix" class="label_name">Vous souhaitez</label><br>
+                <div class="flex_radio_3">
+                    <div class="selection-wrapper">
+                        <label for="selected-item-1" class="selected-label">
+                            <input type="radio" name="selected-item" value="essai" id="selected-item-1">
+                            <span class="icon"></span>
+                            <div class="selected-content">
+                                <p>Un essai gratuit</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="selection-wrapper">
+                        <label for="selected-item-2" class="selected-label">
+                            <input type="radio" checked name="selected-item" value="question" id="selected-item-2">
+                            <span class="icon"></span>
+                            <div class="selected-content">
+                                <p>Poser une question</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="selection-wrapper">
+                        <label for="selected-item-3" class="selected-label">
+                            <input type="radio" name="selected-item" value="aide" id="selected-item-3">
+                            <span class="icon"></span>
+                            <div class="selected-content">
+                                <p>Une assistance</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <label for="email" class="label_name">E-mail</label><br>
+                <input type="text" name="email" class="champ" placeholder="Entrez votre e-mail"><br>
+                <label for="message" class="label_name">Message</label><br>
+                <textarea id="message" name="message" class="champ" rows="5" cols="33">Entrez votre message ici</textarea><br>
+                <button value="envoyer">Envoyer</button>
+            </form>
+        </div>
+        <div class="flex_050">
+            <h3>Où nous trouver ?</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6802.281438409667!2d-0.5762954827352037!3d44.84619790107685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e8f751ca81%3A0x796386037b397a89!2sBordeaux!5e0!3m2!1sfr!2sfr!4v1610200530181!5m2!1sfr!2sfr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> 123, rue bordelaise<br>33 000 Bordeaux</li>
+                <li><i class="fas fa-mobile-alt"></i> 06.12.34.56.78</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
 
 <!-- Footer -->
-        <footer>
-            <h2>Nous suivre sur les réseaux sociaux</h2>
-            <nav>
-                <ul>
-                    <li>Activités</li>
-                    <li>Coaches</li>
-                    <li>Formules</li>
-                    <li>Contact</li>
-                    <li>Actualité</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>CGU</li>
-                    <li>CGV</li>
-                    <li>Mentions légales</li>
-                    <li>Plan du site</li>
-                </ul>
-            </nav>
-        <p>Copyright 2020 - Tous droits réservés</p>
-        <p>Crée avec force par <a href="https://trmouv.fr/" target="_blank" alt="Site TR Mouv">TR Mouv</a></p>
-        </footer>
-    </body>
+<footer>
+<div class="useful_margin">
+    <div>
+        <nav class="nav_footer">
+            <ul>
+                <li>Activités</li>
+                <li>Coaches</li>
+                <li>Formules</li>
+                <li>Contact</li>
+                <li>Actualité</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="social_block">
+        <ul>
+            <li><h2>Nous suivre sur les réseaux sociaux</h2></li>
+            <li><div class="social_icns"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter-square"></i><i class="fab fa-instagram-square"></i></div></li>
+        </ul>
+    </div>
+</div>
+<div class="useful_margin">
+    <nav class="nav_sous">
+        <ul>
+            <li>CGU</li>
+            <li>CGV</li>
+            <li>Mentions légales</li>
+            <li>Plan du site</li>
+        </ul>
+    </nav>
+</div>
+<div class="useful_margin">
+</footer>
+<section class="footer_bottom">
+<div class="useful_margin">
+    <p>Copyright 2020 - Tous droits réservés</p>
+    <p>Une conception originale by <a href="https://trmouv.fr/" target="_blank" alt="Site TR Mouv">TR Mouv</a></p>
+</div>
+</section>
+
+<!-- Button haut de page-->
+<button class="scrollToTopBtn"><i class="fas fa-chevron-up"></i></button>
+
+<!-- Script -->
+<script>
+    $('#scroll_left').on('click', function() {
+  $('.scrolling_wrapper_testimonials').animate({
+    scrollLeft: '-=500'
+  }, 300, 'swing');
+});
+
+$('#scroll_right').on('click', function() {
+  $('.scrolling_wrapper_testimonials').animate({
+    scrollLeft: '+=500'
+  }, 300, 'swing');
+});
+
+var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
+
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.50) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn")
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn")
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.addEventListener("scroll", handleScroll)
+
+</script>
+</body>
 </html>
