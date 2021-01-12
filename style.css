@@ -429,6 +429,9 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1em;
     }
+    .flex_050{
+        padding: 1em;
+    }
     #vid{
         z-index: -10000;
         position: absolute;
