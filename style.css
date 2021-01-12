@@ -444,6 +444,12 @@
     .home_banner{
         height: 70vh;
     }
+    .banner_box h1{
+        font-size: 2.5em
+    }
+    .banner_box h2{
+        font-size: 2em
+    }
 }
 
 /* Pour TOUS les écrans < 999px */
@@ -506,6 +512,12 @@
     .home_banner{
         height: 70vh;
     }
+    .banner_box h1{
+        font-size: 2em
+    }
+    .banner_box h2{
+        font-size: 1.5em
+    }
 }
 
 @media (max-width: 767px){
@@ -514,6 +526,12 @@
     }
     .home_banner{
         height: 50vh;
+    }
+    .banner_box h1{
+        font-size: 1.5em
+    }
+    .banner_box h2{
+        font-size: 1em
     }
 }
 
@@ -641,13 +659,11 @@ header nav li a:hover{
 
 .banner_box h1 {
     color: #5399D3;
-    font-size: 2.5em;
     margin-bottom: 0;
 }
 
 .banner_box h2 {
     color: #FBAC17;
-    font-size: 2em;
     margin-bottom: 1em;
 }
 
