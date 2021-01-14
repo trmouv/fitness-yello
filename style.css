@@ -1018,23 +1018,27 @@ section.testimonials h2{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: hidden;
-    touch-action: pan-x;
-    -webkit-overflow-scrolling: touch;
-    padding: 2em 2em 2em 2em;
+    padding: 2em 0em 2em 0em;
     scroll-snap-type: x mandatory;
 }
 
-.scrolling_wrapper_testimonials article{
+.drag{
     flex: 0 0 auto;
     background-color: #ffffff;
     color: #5399D3;
     margin: 0 2em 0 0;
     padding: 2em;
     transform: skewY(-1deg);
-    transition: all 500ms ease-in;
+    /* transition: all 500ms ease-in; */
+    cursor: grab;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
 }
 
-.scrolling_wrapper_testimonials article:hover{
+.drag:hover{
     transform: skewY(-1deg) scale(1.05);
     transition: all 100ms ease-in;
 }
