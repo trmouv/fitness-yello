@@ -374,10 +374,13 @@
     .useful_margin {
         max-width: 80%!important;
         margin: 0 auto 0 auto;
-      }
-      .scroll_btn{
-          width: 80%;
-      }
+    }
+    .scroll_btn{
+        width: 80%;
+    }
+    section.activities{
+        margin-top: -3em;
+    }
     section.coaches .grid_coaches{
         display : grid;
         grid-template-columns: 2fr 2fr;
@@ -437,7 +440,7 @@
     }
     .home_banner{
         height: 70vh;
-        overflow-x: hidden; 
+        overflow: hidden;
     }
     .banner_box h1{
         font-size: 2.5em
