@@ -433,7 +433,8 @@
         min-width: 100%; 
         min-height: 100%;
         width: auto;
-        height: auto; 
+        height: auto;
+        overflow-x: hidden; 
     }
     .home_banner{
         height: 70vh;
@@ -1468,6 +1469,7 @@ section.footer_bottom a{
 section.footer_bottom .useful_margin{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Button haut de page */
