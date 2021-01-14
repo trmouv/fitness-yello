@@ -544,6 +544,15 @@
         grid-template-rows: 1fr 1fr;
         align-items: center;
         font-size: 1.5em;
+        margin: 0 auto 0 auto;
+    }
+    .prcnt{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .nbr_strg{
+        font-size: 1.5em;
+        font-weight: bold;
     }
     section.arguments p{
         text-align: center;
@@ -589,14 +598,6 @@
     }
     .selected-content{
         width: 90%;
-    }
-    .prcnt{
-        font-size: 2em;
-        font-weight: bold;
-    }
-    .nbr_strg{
-        font-size: 1.5em;
-        font-weight: bold;
     }
 }
 
