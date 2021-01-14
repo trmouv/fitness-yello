@@ -1119,16 +1119,15 @@ section.testimonials p{
 }
 
 section.calltoaction{
-    height: 60vh;
+    height: 50vh;
     background-image: url("images/cta_home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 4em 0 0 0;
+    padding: 4em 0 4em 0;
 }
 
 section.calltoaction .useful_margin div{
-    float: right;
     text-align: right;
 }
 
@@ -1139,7 +1138,7 @@ section.calltoaction h2{
 }
 
 section.calltoaction h3{
-    color: #000000;
+    color: #FBAC17;
     font-size: 1.5em;
     margin-bottom: 2em;
 }
@@ -1177,6 +1176,7 @@ section.arguments{
     color: #5399d3;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 section.arguments h2{
