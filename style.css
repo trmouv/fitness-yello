@@ -1145,6 +1145,7 @@ section.arguments{
     padding: 2em 0 4em 0;
     color: #5399d3;
     position: relative;
+    overflow: hidden;
 }
 
 section.arguments h2{
