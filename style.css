@@ -894,7 +894,6 @@ section.activities article:hover{
     background-image: url("images/crossfit_activite.jpg");
     background-size: cover;
     height: 20em;
-    width: 50%;
 }
 
 .box_contain{
@@ -943,30 +942,24 @@ section.coaches div article .coach_name h4{
 #jerome_mazuret{
     background-image: url("images/jerome_mazuret.jpg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 }
 
 #julia_modiano{
     background-image: url("images/julia_modiano.jpg");
     background-repeat: no-repeat;
-    background-position-x: right;
     background-size: cover;
 }
 
 #remy_tobin{
     background-image: url("images/remy_tobin.jpg");
     background-repeat: no-repeat;
-    background-position-y: -2em;
-    background-position: center;
     background-size: cover;
 }
 
 #eglantine_laroche{
     background-image: url("images/eglantine_laroche.jpg");
     background-repeat: no-repeat;
-    background-position-y: -7em;
-    background-position: center;
     background-size: cover;
 }
 
