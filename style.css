@@ -386,9 +386,6 @@
         grid-template-columns: 2fr 2fr;
         grid-gap: 1em;
     }
-    .section.testimonials{
-        padding: 2em 3em 3em 3em;
-    }
     .flex_3{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -535,9 +532,6 @@
         grid-template-rows: auto;
         grid-gap: 1em;
     }
-    .section.testimonials{
-        padding: 2em 3em 3em 3em;
-    }
     .flex_3{
         display: grid;
         grid-template-rows: auto;
@@ -675,10 +669,6 @@
     }
     .banner_box h2{
         font-size: 1.5em
-    }
-    .section.testimonials{
-        padding: 2em 1em 3em 1em;
-        overflow: hidden;
     }
     .scrolling_wrapper_testimonials article{
         width: 100%;
@@ -987,6 +977,7 @@ section.coaches div article .coach_name h4{
 section.testimonials{
     background-color: #5399D3;
     margin-top: 2em;
+    padding: 2em 3em 3em 3em;
     text-align: center;
     position: relative;
 }
