@@ -595,6 +595,57 @@
 
 /* Pour les écrans jusqu'à 768 px */
 @media (max-width: 768px){
+    #menu_desktop{
+        display: none;
+    }
+
+    #logo_mobile_top{
+        background-image: url("images/FitnessYello_logo_blanc.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 3em;
+    }
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: #FBAC17;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background: #FBAC17;
+        color: #fff;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .topnav .icon:hover {
+        background-color: #5399d3;
+    }
+
+    .topnav #myLinks a:hover {
+        background-color: #5399D3;
+        color: #fff;
+    }
+
+    .activeTop {
+        background-color: #FBAC17;
+        color: #fff;
+    }
     #vid{
         display: none;
     }
