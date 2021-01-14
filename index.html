@@ -400,6 +400,27 @@ $('#scroll_right').on('click', function() {
     }
 });
 
+/* Bloquer scroll vertical lors d'un swipe horizontal */
+window.blockMenuHeaderScroll = false;
+$(window).on('touchstart', function(e)
+{
+    if ($(e.target).closest('.drag').length == 1)
+    {
+        blockMenuHeaderScroll = true;
+    }
+});
+$(window).on('touchend', function()
+{
+    blockMenuHeaderScroll = false;
+});
+$(window).on('touchmove', function(e)
+{
+    if (blockMenuHeaderScroll)
+    {
+        e.preventDefault();
+    }
+});
+
 /* Fonction scroll haut de page */
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
 var rootElement = document.documentElement
