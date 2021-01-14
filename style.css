@@ -474,6 +474,13 @@
         font-size: 2em;
         font-weight: bold;
     }
+    .satisfaction_circle{
+        width: 9em;
+        height: 9em;
+    }
+    .fa-star{
+        font-size: 2em;
+    }
 }
 
 /* Pour les écrans < 992px */
@@ -559,6 +566,13 @@
         align-items: center;
         font-size: 1.5em;
         margin: 0 auto 0 auto;
+    }
+    .satisfaction_circle{
+        width: 7em;
+        height: 7em;
+    }
+    .fa-star{
+        font-size: 1.5em;
     }
     .prcnt{
         font-size: 2em;
@@ -693,6 +707,13 @@
         align-items: center;
         font-size: 1.5em;
         margin: 0 auto 0 auto;
+    }
+    .satisfaction_circle{
+        width: 7em;
+        height: 7em;
+    }
+    .fa-star{
+        font-size: 1.5em;
     }
     .prcnt{
         font-size: 2em;
@@ -1167,8 +1188,6 @@ section.arguments .numbers div{
 }
 
 .satisfaction_circle {
-    width: 9em;
-    height: 9em;
     border-radius: 5000px;
     border: 0.25em solid #FBAC17;
     margin: auto;
@@ -1181,7 +1200,6 @@ section.arguments .numbers div{
 
 .fa-star{
     color: #FBAC17;
-    font-size: 2em;
     margin-top: 0.35em;
     background-color: #fff;
 }
