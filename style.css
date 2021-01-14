@@ -434,10 +434,10 @@
         min-height: 100%;
         width: auto;
         height: auto;
-        overflow-x: hidden; 
     }
     .home_banner{
         height: 70vh;
+        overflow-x: hidden; 
     }
     .banner_box h1{
         font-size: 2.5em
