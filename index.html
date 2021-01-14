@@ -11,9 +11,23 @@
     </head>
     <body>
         
-<!-- Menu Desktop -->
+<!-- Menu -->
 <header>
-    <div class="useful_margin">
+    <!-- Menu Mobile -->
+    <div class="topnav">
+        <a href="#home" class="activeTop"><div id="logo_mobile_top"></div></a>
+        <div id="myLinks">
+          <a href="#activites">Activités</a>
+          <a href="#coach">Coachs</a>
+          <a href="#offres">Formules</a>
+          <a href="#message">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- Menu Desktop -->
+    <div class="useful_margin" id="menu_desktop">
         <div class="flex_grid">
             <div class="grid_1_3" id="logo">
                 <a href="index.html" alt="Accueil"><img src="images/logo_fitnessyello.png" height="90px" alt="fitnessyello_logo"/></a>
@@ -25,7 +39,6 @@
                         <li><a href="#coach">Coachs</a></li>
                         <li><a href="#offres">Formules</a></li>
                         <li><a href="#message">Contact</a></li>
-                        <li><a href="#">Actualité</a></li>
                     </ul>
                 </nav>
             </div>
@@ -356,6 +369,7 @@
 
 <!-- Script -->
 <script>
+/* Fonction scroll gauche/droite */
 $('#scroll_left').on('click', function() {
     if (window.matchMedia("(max-width: 767px)").matches) {
         $('.scrolling_wrapper_testimonials').animate({
@@ -380,6 +394,7 @@ $('#scroll_right').on('click', function() {
     }
 });
 
+/* Fonction scroll haut de page */
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
 var rootElement = document.documentElement
 
@@ -407,6 +422,16 @@ document.addEventListener("scroll", handleScroll)
 
 var vid = document.getElementById("vid");
 vid.playbackRate = 0.75;
+
+/* Fonction cacher/masquer menu hamburger */
+function burgerMenu() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 </script>
 </body>

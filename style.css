@@ -363,30 +363,21 @@
     }
 }
 
-/* Pour les écrans de 1200px à 1599px */
-@media (min-width: 1200px) and (max-width: 1599px) {
+/* Pour les écrans > 992px */
+@media (min-width: 992px){
+    #menu_desktop{
+        padding: 0.5em 0 0.5em 0;
+    }
+    .topnav{
+        display: none;
+    }
     .useful_margin {
-      max-width: 80%!important;
-      margin: 0 auto 0 auto;
-    }
-    .scroll_btn{
-        width: 80%;
-    }
-}
-
-/* Pour les écrans < 1199px */
-@media (max-width: 1199px){
-    .useful_margin{
-        max-width: 95%;
+        max-width: 80%!important;
         margin: 0 auto 0 auto;
-    }
-    .scroll_btn{
-        width: 95%;
-    }
-}
-
-/* Pour TOUS les écrans > 999px */
-@media (min-width: 1000px){
+      }
+      .scroll_btn{
+          width: 80%;
+      }
     section.coaches .grid_coaches{
         display : grid;
         grid-template-columns: 2fr 2fr;
@@ -463,8 +454,67 @@
     }
 }
 
-/* Pour TOUS les écrans < 999px */
-@media (max-width: 999px){
+/* Pour les écrans < 992px */
+@media (max-width: 992px){
+    #menu_desktop{
+        display: none;
+    }
+
+    #logo_mobile_top{
+        background-image: url("images/FitnessYello_logo_blanc.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 3em;
+    }
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: #FBAC17;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background: #FBAC17;
+        color: #fff;
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .topnav .icon:hover {
+        background-color: #5399d3;
+    }
+
+    .topnav #myLinks a:hover {
+        background-color: #5399D3;
+        color: #fff;
+    }
+
+    .activeTop {
+        background-color: #FBAC17;
+        color: #fff;
+    }
+
+    .useful_margin{
+        max-width: 95%;
+        margin: 0 auto 0 auto;
+    }
+    .scroll_btn{
+        width: 95%;
+    }
     section.coaches .grid_coaches{
         display : grid;
         grid-template-rows: auto;
@@ -522,9 +572,13 @@
     }
     .home_banner{
         height: 70vh;
+        background-image: url("images/fitgirl_home.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
     }
     .banner_box h1{
-        font-size: 2em
+        font-size: 2em;
     }
     .banner_box h2{
         font-size: 1.5em
@@ -539,7 +593,8 @@
     }
 }
 
-@media (max-width: 767px){
+/* Pour les écrans jusqu'à 768 px */
+@media (max-width: 768px){
     #vid{
         display: none;
     }
@@ -547,10 +602,10 @@
         height: 50vh;
     }
     .banner_box h1{
-        font-size: 1.5em
+        font-size: 2em
     }
     .banner_box h2{
-        font-size: 1em
+        font-size: 1.5em
     }
     .selected-content{
         width: 90%;
@@ -567,7 +622,6 @@
 }
 
 header {
-    padding: 1em 0 1em 0;
     background-color: #fff;
 }
 
@@ -580,30 +634,23 @@ header nav ul {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.grid_1_3 {
-    width: 33,33%;
+    justify-content: space-around;
 }
 
 header .grid_1_3{
-    text-align: right;
-}
-
-.grid_2_3{
-    width: 66,66%;
+    text-align: center;
+    margin: auto;
 }
 
 header .grid_2_3{
-    padding: 1.5em;
+    margin: auto;
 }
 
 button{
     color: #fff;
     background-color: #FBAC17;
     border: none;
-    padding: 1em 2em 1em 2em;
+    padding: 1em 1.5em 1em 1.5em;
     outline-style:none;
 }
 
@@ -631,7 +678,6 @@ header nav ul{
 
 header nav ul li{
     display: inline;
-    margin-right: 1em;
 }
 
 header nav ul li a {
