@@ -894,6 +894,7 @@ section.activities article:hover{
     background-image: url("images/crossfit_activite.jpg");
     background-size: cover;
     height: 20em;
+    width: 50%;
 }
 
 .box_contain{
@@ -915,59 +916,58 @@ section.coaches h2{
 section.coaches article{
     height: 15em;
     background-color: #5399D3;
-}
-
-section.coaches .grid_coaches article div {
-    color: #fff;
-    width: 50%;
-    height: 15em;
-    float: right;
+    position: relative;
 }
 
 section.coaches div article .img_coach{
-    float: left;
     height: 15em;
     width: 50%;
 }
 
-section.coaches div article div h3{
-    text-align: center;
+section.coaches div article .coach_name{
+    color: #fff;
+    position: absolute; /* postulat de départ */
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(10%, -50%);
+}
+
+section.coaches div article .coach_name h3{
     margin-bottom: 0.25em;
-    margin-top: 8vh;
-    transform: translateY(-50%);
     font-size: 1em;
 }
 
-section.coaches div article div h4{
-    text-align: center;
-    transform: translateY(-50%);
+section.coaches div article .coach_name h4{
     font-weight: 400;
 }
 
 #jerome_mazuret{
     background-image: url("images/jerome_mazuret.jpg");
     background-repeat: no-repeat;
-    background-position-x: -10em;
+    background-position: center;
+    background-size: cover;
 }
 
 #julia_modiano{
     background-image: url("images/julia_modiano.jpg");
     background-repeat: no-repeat;
-    background-position-x: -10em;
+    background-position-x: right;
+    background-size: cover;
 }
 
 #remy_tobin{
     background-image: url("images/remy_tobin.jpg");
     background-repeat: no-repeat;
     background-position-y: -2em;
-    background-position-x: -7em;
+    background-position: center;
+    background-size: cover;
 }
 
 #eglantine_laroche{
     background-image: url("images/eglantine_laroche.jpg");
     background-repeat: no-repeat;
     background-position-y: -7em;
-    background-position-x: -7em;
+    background-position: center;
+    background-size: cover;
 }
 
 .social_ico_coaches{
@@ -1213,7 +1213,7 @@ section.offers .offers_box article#bonus_scale{
 }
 
 section.offers .offers_box article{
-    margin: 2em;
+    margin: 1em;
     padding: 1em;
     background-color: #fff;
     transform: skewY(-1deg);
