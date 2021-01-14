@@ -594,7 +594,7 @@
 }
 
 /* Pour les écrans jusqu'à 768 px */
-@media (max-width: 768px){
+@media (min-width : 300px and max-width: 768px){
     #menu_desktop{
         display: none;
     }
