@@ -396,6 +396,14 @@
         grid-template-columns: 2fr 2fr;
         grid-gap: 1em;
     }
+    .scroll_btn{
+        z-index: 1000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #999999;
+    }
     .flex_3{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -554,6 +562,9 @@
         grid-template-rows: auto;
         grid-gap: 2em ;
     }
+    .scroll_btn{
+        display: none;
+    }
     section.offers .offers_box{
         display: grid;
         grid-template-rows: auto;
@@ -696,6 +707,9 @@
     }
     .scrolling_wrapper_testimonials article{
         width: 90%;
+    }
+    .scroll_btn{
+        display: none;
     }
     .selected-content{
         width: 90%;
@@ -1005,7 +1019,7 @@ section.coaches div article .coach_name h4{
 section.testimonials{
     background-color: #5399D3;
     margin-top: 2em;
-    padding: 2em 3em 3em 3em;
+    padding: 2em 0em 3em 0em;
     text-align: center;
     position: relative;
 }
@@ -1029,27 +1043,12 @@ section.testimonials h2{
     margin: 0 2em 0 0;
     padding: 2em;
     transform: skewY(-1deg);
-    /* transition: all 500ms ease-in; */
     cursor: grab;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;
     user-select: none;
-}
-
-.drag:hover{
-    transform: skewY(-1deg) scale(1.05);
-    transition: all 100ms ease-in;
-}
-
-.scroll_btn{
-    z-index: 1000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #999999;
 }
 
 #scroll_left{

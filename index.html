@@ -370,6 +370,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/jquery.dragscroll.js"></script>
 <script type="text/javascript">
+
 /* Fonction drag scroll */
 $('.drag').dragScroll({
     direction: 'scrollLeft'
@@ -379,11 +380,11 @@ $('#scroll_left').on('click', function() {
     if (window.matchMedia("(max-width: 767px)").matches) {
         $('.scrolling_wrapper_testimonials').animate({
         scrollLeft: '-=100'
-        }, 10, 'swing');
+        }, 500, 'swing');
     } else {
         $('.scrolling_wrapper_testimonials').animate({
         scrollLeft: '-=600'
-        }, 10, 'swing');
+        }, 500, 'swing');
     }
 });
 
@@ -391,11 +392,11 @@ $('#scroll_right').on('click', function() {
     if (window.matchMedia("(max-width: 767px").matches){
         $('.scrolling_wrapper_testimonials').animate({
         scrollLeft: '+=100'
-        }, 10, 'swing');
+        }, 500, 'swing');
     } else {
         $('.scrolling_wrapper_testimonials').animate({
         scrollLeft: '+=600'
-        }, 10, 'swing');
+        }, 500, 'swing');
     }
 });
 
