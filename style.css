@@ -452,6 +452,14 @@
     .selected-content{
         width: 70%;
     }
+    .prcnt{
+        font-size: 3em;
+        font-weight: bold;
+    }
+    .nbr_strg{
+        font-size: 2em;
+        font-weight: bold;
+    }
 }
 
 /* Pour les écrans < 992px */
@@ -559,16 +567,7 @@
         grid-gap: 1em;
     }
     #vid{
-        z-index: -10000;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        bottom: 0;
-        min-width: 100%; 
-        min-height: 100%;
-        width: auto;
-        height: auto; 
+        display: none;
     }
     .home_banner{
         height: 70vh;
@@ -590,6 +589,14 @@
     }
     .selected-content{
         width: 90%;
+    }
+    .prcnt{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .nbr_strg{
+        font-size: 1.5em;
+        font-weight: bold;
     }
 }
 
@@ -660,6 +667,13 @@
     }
     .selected-content{
         width: 90%;
+    }
+    .prcnt{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .nbr_strg{
+        font-size: 2em;
     }
 }
 
@@ -1139,11 +1153,6 @@ section.arguments h2{
     margin-bottom: 1em;
 }
 
-.nbr_strg{
-    font-size: 2em;
-    font-weight: bold;
-}
-
 section.arguments .numbers div{
     text-align: center;
 }
@@ -1166,11 +1175,6 @@ section.arguments .numbers div{
     font-size: 2em;
     margin-top: 0.35em;
     background-color: #fff;
-}
-
-.prcnt{
-    font-size: 3em;
-    font-weight: bold;
 }
 
 section.offers{
