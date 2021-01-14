@@ -686,6 +686,14 @@
     .selected-content{
         width: 90%;
     }
+    section.arguments .numbers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        font-size: 1.5em;
+        margin: 0 auto 0 auto;
+    }
     .prcnt{
         font-size: 2em;
         font-weight: bold;
